@@ -3,6 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
+我是一个CAE工程师，喜欢记录自己的学习生活！
 AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
 
 This theme is aimed to be accessible out of the box. Light and dark mode are supported by
