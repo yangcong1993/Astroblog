@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Yangcong",
   profile: "https://satnaing.dev/",
   desc: "一个CAE工程师的个人小站",
-  title: "YCPaper",
+  title: "YCBlog",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerIndex: 4,
