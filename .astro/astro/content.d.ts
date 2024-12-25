@@ -141,9 +141,51 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"how-to-update-dependencies.md": {
+	id: "how-to-update-dependencies.md";
+  slug: "how-to-update-dependencies";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"portfolio-website-development.md": {
+	id: "portfolio-website-development.md";
+  slug: "how-do-i-develop-my-portfolio-and-blog";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"predefined-color-schemes.md": {
+	id: "predefined-color-schemes.md";
+  slug: "predefined-color-schemes";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"setting-dates-via-git-hooks.md": {
+	id: "setting-dates-via-git-hooks.md";
+  slug: "setting-dates-via-git-hooks";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"tailwind-typography.md": {
+	id: "tailwind-typography.md";
+  slug: "tailwind-typography";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"terminal-development.md": {
+	id: "terminal-development.md";
+  slug: "how-do-i-develop-my-terminal-portfolio-website-with-react";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "test.md": {
 	id: "test.md";
-  slug: "astro-paper-v9";
+  slug: "我的世界";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

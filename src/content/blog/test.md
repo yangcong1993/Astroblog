@@ -1,13 +1,19 @@
 ---
-author: Yangcong
-pubDatetime: 2024-12-24T09:30:41.816Z
-title: A我不脏拆安
-slug: "astro-paper-v9"
-featured: true
-ogImage: ../../assets/images/AstroPaper-v4.png
+title: 我的世界
+author: YC
+pubDatetime: 2024-12-24T09:42:51Z
+slug: 我的世界
+featured: false
+draft: false
 tags:
-  - release
-description: "AstroPaper v4: ensuring a smoother and more feature-rich blogging experience."
+  - JavaScript
+  - ReactJS
+  - ContextAPI
+  - Styled-Components
+  - TypeScript
+description:
+  "EXAMPLE POST: Developing a terminal-like website using ReactJS, TypeScript and Styled-Components.
+  Includes features like autocomplete, multiple themes, command hints etc."
 ---
 
 怒肠癌男昂非常

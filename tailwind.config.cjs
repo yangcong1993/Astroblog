@@ -7,6 +7,8 @@ function withOpacity(variableName) {
   };
 }
 
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["selector", "[data-theme='dark']"],
@@ -60,7 +62,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        mono: ["LXGW WenKai Screen R", "IBM Plex Mono", "monospace"],
+        mono: ["LXGW WenKai TC", "IBM Plex Mono", "monospace"],
       },
 
       typography: {
