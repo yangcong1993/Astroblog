@@ -190,6 +190,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"写给小七父亲的一份信.md": {
+	id: "写给小七父亲的一份信.md";
+  slug: "写个小七父亲的一封信";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};

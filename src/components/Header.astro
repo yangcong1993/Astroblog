@@ -4,7 +4,7 @@ import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 import '@fontsource/lxgw-wenkai-tc';
 export interface Props {
-  activeNav?: "posts" | "archives" | "tags" | "about" | "search";
+  activeNav?: "posts" | "archives" | "tags" | "about" | "YC"| "search";
 }
 
 const { activeNav } = Astro.props;
@@ -70,6 +70,12 @@ const { activeNav } = Astro.props;
               About
             </a>
           </li>
+          <li>
+            <a href="https://astrotr.vercel.app/" class={activeNav === "YC" ? "active" : ""}>
+              YC
+            </a>
+          </li>
+          
           {
             SITE.showArchives && (
               <li>
