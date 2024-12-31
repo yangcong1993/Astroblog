@@ -2,7 +2,7 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import PostDetails from "@layouts/PostDetails.astro";
 import getSortedPosts from "@utils/getSortedPosts";
-import '@fontsource/lxgw-wenkai-tc';
+import "@fontsource/lxgw-wenkai-tc";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -11,7 +11,7 @@ export interface Props {
 export async function getStaticPaths() {
   const posts = await getCollection("blog", ({ data }) => !data.draft);
 
-  const postResult = posts.map(post => ({
+  const postResult = posts.map((post) => ({
     params: { slug: post.slug },
     props: { post },
   }));
@@ -25,21 +25,5 @@ const posts = await getCollection("blog");
 const sortedPosts = getSortedPosts(posts);
 ---
 
+
 <PostDetails post={post} posts={sortedPosts} />
-
-
-<script src="https://giscus.app/client.js"
-        data-repo="yangcong1993/Astroblog"
-        data-repo-id="R_kgDONhwRow"
-        data-category="Announcements"
-        data-category-id="DIC_kwDONhwRo84Cln9P"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
