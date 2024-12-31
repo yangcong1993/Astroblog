@@ -141,6 +141,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"01-如何更改字体.md": {
+	id: "01-如何更改字体.md";
+  slug: "如何更改Blog全局字体";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "how-to-update-dependencies.md": {
 	id: "how-to-update-dependencies.md";
   slug: "how-to-update-dependencies";
@@ -179,13 +186,6 @@ declare module 'astro:content' {
 "terminal-development.md": {
 	id: "terminal-development.md";
   slug: "how-do-i-develop-my-terminal-portfolio-website-with-react";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"test.md": {
-	id: "test.md";
-  slug: "我的世界";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
