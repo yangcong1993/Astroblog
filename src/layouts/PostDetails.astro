@@ -77,6 +77,7 @@ const nextPost =
       </svg><span>Go back</span>
     </button>
   </div>
+  
   <main id="main-content">
     <h1 transition:name={slugifyStr(title)} class="post-title">{title}</h1>
     <Datetime
@@ -90,8 +91,9 @@ const nextPost =
     <article id="article" class="prose mx-auto mt-8 max-w-3xl">
       <Content />
     </article>
-
+    
     <ul class="my-8">
+     Tags:
       {tags.map((tag) => <Tag tag={slugifyStr(tag)} />)}
     </ul>
 
@@ -114,7 +116,7 @@ const nextPost =
     </div>
 
     <hr class="my-6 border-dashed" />
-
+    
     <!-- Previous/Next Post Buttons -->
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
       {
@@ -178,7 +180,9 @@ const nextPost =
         )
       }
     </div>
+    
   </main>
+  
 <div class="giscus-container">
   <script
     src="https://giscus.app/client.js"
