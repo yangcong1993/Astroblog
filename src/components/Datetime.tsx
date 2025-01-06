@@ -61,9 +61,11 @@ const FormattedDatetime = ({ pubDatetime, modDatetime }: DatetimesProps) => {
     modDatetime && modDatetime > pubDatetime ? modDatetime : pubDatetime
   );
 
-  const date = myDatetime.toLocaleDateString(LOCALE.langTag, {
+  const locale = "zh-CN";
+
+  const date = myDatetime.toLocaleDateString(locale, {
     year: "numeric",
-    month: "short",
+    month: "long",
     day: "numeric",
   });
 
